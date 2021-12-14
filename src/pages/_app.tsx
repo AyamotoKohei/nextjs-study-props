@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import { VFC } from "react";
-import { Character } from "./CharacterList";
+import CharacterList, { Character } from "../components/CharacterList";
 
 const MyApp: VFC = () => {
-  const character: Character[] = [
+  const characters: Character[] = [
     {
       id: 1,
       name: "桜木花道",
@@ -40,6 +40,7 @@ const MyApp: VFC = () => {
       <header>
         <h1>『SLAM DUNK』登場人物</h1>
       </header>
+      <CharacterList school="湘北高校" characters={characters} />
     </div>
   );
 };
