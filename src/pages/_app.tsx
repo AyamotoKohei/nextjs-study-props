@@ -36,7 +36,7 @@ const MyApp: VFC = () => {
   ];
 
   return (
-    <div>
+    <div className="container">
       <header>
         <h1>『SLAM DUNK』登場人物</h1>
       </header>
